@@ -1,3 +1,5 @@
+pub mod weapon;
+
 use std::time;
 use fyrox::{
     engine::{Engine},
@@ -5,7 +7,7 @@ use fyrox::{
     event::{DeviceEvent, ElementState, Event, VirtualKeyCode, WindowEvent},
     event_loop::{ControlFlow, EventLoop},
     core::algebra::{Vector3,UnitQuaternion},
-    core::pool::Handle,
+    core::pool::{Handle, Pool},
     resource::texture::TextureWrapMode,
     scene::{
         base::BaseBuilder,
@@ -20,31 +22,50 @@ use fyrox::{
     window::WindowBuilder,
 };
 
+use weapon::Weapon;
+
 // Game logic performed 60 times per second
 const TIMESTEP: f32 = 1.0 / 60.0;
 
 // Game
 struct Game {
     scene: Handle<Scene>,
-    player: Player, // New
+    player: Player, 
+    weapons: Pool<Weapon>
 }
 
 impl Game {
     pub async fn new(engine: &mut Engine) -> Self {
-        let mut scene = Scene::new();
+    let mut scene = Scene::new();
 
-        // Load a scene resource and create its instance.
-        engine
-            .resource_manager
-            .request_model("data/models/scene.rgs")
-            .await
-            .unwrap()
-            .instantiate_geometry(&mut scene);
+    // Load a scene resource and create its instance.
+    engine
+        .resource_manager
+        .request_model("data/models/scene.rgs")
+        .await
+        .unwrap()
+        .instantiate_geometry(&mut scene);
 
-        Self {
-            player: Player::new(&mut scene, engine.resource_manager.clone()).await,
-            scene: engine.scenes.add(scene),
-        }
+    // Create player first.
+    let player = Player::new(&mut scene, engine.resource_manager.clone()).await;
+
+    // Create weapon next.
+    let weapon = Weapon::new(&mut scene, engine.resource_manager.clone()).await;
+
+    // "Attach" the weapon to the weapon pivot of the player.
+    scene.graph.link_nodes(weapon.model(), player.weapon_pivot);
+
+    // Create a container for the weapons.
+    let mut weapons = Pool::new();
+
+    // Put the weapon into it.
+    weapons.spawn(weapon);
+
+    Self {
+        player,
+        scene: engine.scenes.add(scene),
+        weapons,
+    }
     }
 
     pub fn update(&mut self, engine: &mut Engine) {
@@ -101,6 +122,7 @@ struct InputController {
 // Player
 struct Player {
     camera: Handle<Node>,
+    weapon_pivot: Handle<Node>,
     rigid_body: Handle<Node>,
     controller: InputController,
 }
@@ -109,6 +131,7 @@ impl Player {
     async fn new(scene: &mut Scene, resource_manager: ResourceManager) -> Self {
         // Create rigid body with a camera, move it a bit up to "emulate" head.
         let camera;
+        let weapon_pivot;
         let rigid_body_handle = RigidBodyBuilder::new(
             BaseBuilder::new()
                 .with_local_transform(
@@ -134,8 +157,19 @@ impl Player {
                     ColliderBuilder::new(BaseBuilder::new())
                         .with_shape(ColliderShape::capsule_y(0.25, 0.2))
                         .build(&mut scene.graph),
-                ]),
+                ])
+                .with_children(&[{
+                    weapon_pivot = BaseBuilder::new()
+                        .with_local_transform(
+                            TransformBuilder::new()
+                                .with_local_position(Vector3::new(-0.1, -0.05, 0.015))
+                                .build(),
+                        )
+                        .build(&mut scene.graph);
+                    weapon_pivot
+                }]),
         )
+        
         // We don't want the player to tilt.
         .with_locked_rotations(true)
         // We don't want the rigid body to sleep (be excluded from simulation)
@@ -144,6 +178,7 @@ impl Player {
 
         Self {
             camera,
+            weapon_pivot,
             rigid_body: rigid_body_handle,
             controller: Default::default(),
         }
