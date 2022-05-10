@@ -147,7 +147,17 @@ impl Player {
                                 TransformBuilder::new()
                                     .with_local_position(Vector3::new(0.0, 0.25, 0.0))
                                     .build(),
-                            ),
+                            )
+                            .with_children(&[{
+                                weapon_pivot = BaseBuilder::new()
+                                    .with_local_transform(
+                                        TransformBuilder::new()
+                                            .with_local_position(Vector3::new(-0.1, -0.05, 0.015))
+                                            .build(),
+                                    )
+                                    .build(&mut scene.graph);
+                                weapon_pivot
+                            }]),
                         )
                         .with_skybox(create_skybox(resource_manager).await)
                         .build(&mut scene.graph);
@@ -158,16 +168,7 @@ impl Player {
                         .with_shape(ColliderShape::capsule_y(0.25, 0.2))
                         .build(&mut scene.graph),
                 ])
-                .with_children(&[{
-                    weapon_pivot = BaseBuilder::new()
-                        .with_local_transform(
-                            TransformBuilder::new()
-                                .with_local_position(Vector3::new(-0.1, -0.05, 0.015))
-                                .build(),
-                        )
-                        .build(&mut scene.graph);
-                    weapon_pivot
-                }]),
+                
         )
         
         // We don't want the player to tilt.
