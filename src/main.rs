@@ -1,19 +1,34 @@
 pub mod weapon;
+pub mod message;
 
+use std::sync::mpsc::Sender;
+use std::sync::mpsc::Receiver;
+use std::sync::Arc;
 use std::time;
+
 use fyrox::{
     engine::{Engine},
     engine::resource_manager::ResourceManager,
     event::{DeviceEvent, ElementState, Event, VirtualKeyCode, WindowEvent},
     event_loop::{ControlFlow, EventLoop},
-    core::algebra::{Vector3,UnitQuaternion},
+    core::algebra::{Point3, Vector3, UnitQuaternion},
     core::pool::{Handle, Pool},
+    core::math::ray::Ray,
+    core::sstorage::ImmutableString,
+    core::parking_lot::lock_api::Mutex,
+    material::Material,
+    material::PropertyValue,
     resource::texture::TextureWrapMode,
     scene::{
         base::BaseBuilder,
         camera::{CameraBuilder, SkyBox, SkyBoxBuilder},
         collider::ColliderShape,
         collider::ColliderBuilder,
+        graph::physics::RayCastOptions,
+        graph::Graph,
+        mesh::MeshBuilder,
+        mesh::surface::{SurfaceData, SurfaceBuilder},
+        mesh::RenderPath,
         node::Node,
         rigidbody::RigidBodyBuilder,
         Scene,
@@ -23,6 +38,7 @@ use fyrox::{
 };
 
 use weapon::Weapon;
+use message::Message;
 
 // Game logic performed 60 times per second
 const TIMESTEP: f32 = 1.0 / 60.0;
@@ -31,45 +47,121 @@ const TIMESTEP: f32 = 1.0 / 60.0;
 struct Game {
     scene: Handle<Scene>,
     player: Player, 
-    weapons: Pool<Weapon>
+    weapons: Pool<Weapon>,
+    receiver: Receiver<Message>, // Single receiver, it cannot be cloned.
+    sender: Sender<Message>, // Sender can be cloned and used from various places.
 }
 
 impl Game {
     pub async fn new(engine: &mut Engine) -> Self {
-    let mut scene = Scene::new();
+        let mut scene = Scene::new();
 
-    // Load a scene resource and create its instance.
-    engine
-        .resource_manager
-        .request_model("data/models/scene.rgs")
-        .await
-        .unwrap()
-        .instantiate_geometry(&mut scene);
+        // Load a scene resource and create its instance.
+        engine
+            .resource_manager
+            .request_model("data/models/scene.rgs")
+            .await
+            .unwrap()
+            .instantiate_geometry(&mut scene);
 
-    // Create player first.
-    let player = Player::new(&mut scene, engine.resource_manager.clone()).await;
+        // Create player first.
+        let player = Player::new(&mut scene, engine.resource_manager.clone()).await;
 
-    // Create weapon next.
-    let weapon = Weapon::new(&mut scene, engine.resource_manager.clone()).await;
+        // Create weapon next.
+        let weapon = Weapon::new(&mut scene, engine.resource_manager.clone()).await;
 
-    // "Attach" the weapon to the weapon pivot of the player.
-    scene.graph.link_nodes(weapon.model(), player.weapon_pivot);
+        // "Attach" the weapon to the weapon pivot of the player.
+        scene.graph.link_nodes(weapon.model(), player.weapon_pivot);
 
-    // Create a container for the weapons.
-    let mut weapons = Pool::new();
+        // Create a container for the weapons.
+        let mut weapons = Pool::new();
 
-    // Put the weapon into it.
-    weapons.spawn(weapon);
+        // Put the weapon into it.
+        weapons.spawn(weapon);
+        player.weapon = weapon;
 
-    Self {
-        player,
-        scene: engine.scenes.add(scene),
-        weapons,
+        Self {
+            player,
+            scene: engine.scenes.add(scene),
+            weapons,
+        }
     }
+
+    pub fn update(&mut self, engine: &mut Engine, dt: f32) {
+        self.player.update(&mut engine.scenes[self.scene]);
+
+        for weapon in self.weapons.iter_mut() {
+            weapon.update(dt);
+        }
+    
+        // We're using `try_recv` here because we don't want to wait until next message -
+        // if the queue is empty just continue to next frame.
+        while let Ok(message) = self.receiver.try_recv() {
+            match message {
+                Message::ShootWeapon { weapon } => {
+                    self.shoot_weapon(weapon, engine);
+                }
+            }
+        }
     }
 
-    pub fn update(&mut self, engine: &mut Engine) {
-        self.player.update(&mut engine.scenes[self.scene]); // New
+    fn shoot_weapon(&mut self, weapon: Handle<Weapon>, engine: &mut Engine) {
+    let weapon = &mut self.weapons[weapon];
+
+    if weapon.can_shoot() {
+        weapon.shoot();
+
+        let scene = &mut engine.scenes[self.scene];
+
+        let weapon_model = &scene.graph[weapon.model()];
+
+        // Make a ray that starts at the weapon's position in the world and look toward
+        // "look" vector of the weapon.
+        let ray = Ray::new(
+            scene.graph[weapon.shot_point()].global_position(),
+            weapon_model.look_vector().scale(1000.0),
+        );
+
+        let mut intersections = Vec::new();
+
+        scene.graph.physics.cast_ray(
+            RayCastOptions {
+                ray_origin: Point3::from(ray.origin),
+                max_len: ray.dir.norm(),
+                groups: Default::default(),
+                sort_results: true, // We need intersections to be sorted from closest to furthest.
+                ray_direction: ray.dir,
+            },
+            &mut intersections,
+        );
+
+        // Ignore intersections with player's capsule.
+        let trail_length = if let Some(intersection) = intersections
+            .iter()
+            .find(|i| i.collider != self.player.collider)
+        {
+            //
+            // TODO: Add code to handle intersections with bots.
+            //
+
+            // For now just apply some force at the point of impact.
+            let colliders_parent = scene.graph[intersection.collider].parent();
+            let picked_rigid_body = scene.graph[colliders_parent].as_rigid_body_mut();
+            picked_rigid_body.apply_force_at_point(
+                ray.dir.normalize().scale(10.0),
+                intersection.position.coords,
+            );
+            picked_rigid_body.wake_up();
+
+            // Trail length will be the length of line between intersection point and ray origin.
+            (intersection.position.coords - ray.origin).norm()
+        } else {
+            // Otherwise trail length will be just the ray length.
+            ray.dir.norm()
+        };
+
+        create_shot_trail(&mut scene.graph, ray.origin, ray.dir, trail_length);
+    }
     }
 }
 
@@ -116,6 +208,7 @@ struct InputController {
     move_right: bool,
     pitch: f32,
     yaw: f32,
+    shoot: bool,
 }
 
 
@@ -124,14 +217,22 @@ struct Player {
     camera: Handle<Node>,
     weapon_pivot: Handle<Node>,
     rigid_body: Handle<Node>,
+    collider: Handle<Node>,
     controller: InputController,
+    sender: Sender<Message>,
+    weapon: Handle<Weapon>,
 }
 
 impl Player {
-    async fn new(scene: &mut Scene, resource_manager: ResourceManager) -> Self {
+    async fn new(
+        scene: &mut Scene,
+        resource_manager: ResourceManager,
+        sender: Sender<Message>,
+    ) -> Self {
         // Create rigid body with a camera, move it a bit up to "emulate" head.
         let camera;
         let weapon_pivot;
+        let collider;
         let rigid_body_handle = RigidBodyBuilder::new(
             BaseBuilder::new()
                 .with_local_transform(
@@ -164,9 +265,12 @@ impl Player {
                         camera
                     },
                     // Add capsule collider for the rigid body.
-                    ColliderBuilder::new(BaseBuilder::new())
-                        .with_shape(ColliderShape::capsule_y(0.25, 0.2))
-                        .build(&mut scene.graph),
+                    {
+                        collider = ColliderBuilder::new(BaseBuilder::new())
+                            .with_shape(ColliderShape::capsule_y(0.25, 0.2))
+                            .build(&mut scene.graph);
+                        collider
+                    }
                 ])
                 
         )
@@ -181,7 +285,9 @@ impl Player {
             camera,
             weapon_pivot,
             rigid_body: rigid_body_handle,
+            collider,
             controller: Default::default(),
+            sender,
         }
     }
 
@@ -225,6 +331,14 @@ impl Player {
                 &Vector3::y_axis(),
                 self.controller.yaw.to_radians(),
             ));
+
+        if self.controller.shoot {
+            self.sender
+                .send(Message::ShootWeapon {
+            weapon: self.weapon,
+        })
+        .unwrap();
+}
     }
 
     fn process_input_event(&mut self, event: &Event<()>) {
@@ -259,9 +373,67 @@ impl Player {
                         (self.controller.pitch + delta.1 as f32).clamp(-90.0, 90.0);
                 }
             }
+            &WindowEvent::MouseInput { button, state, .. } => {
+                if button == MouseButton::Left {
+                    self.controller.shoot = state == ElementState::Pressed;
+                }
+            }
             _ => (),
         }
     }
+}
+
+fn create_shot_trail(
+    graph: &mut Graph,
+    origin: Vector3<f32>,
+    direction: Vector3<f32>,
+    trail_length: f32,
+) {
+    let transform = TransformBuilder::new()
+        .with_local_position(origin)
+        // Scale the trail in XZ plane to make it thin, and apply `trail_length` scale on Y axis
+        // to stretch is out.
+        .with_local_scale(Vector3::new(0.0025, 0.0025, trail_length))
+        // Rotate the trail along given `direction`
+        .with_local_rotation(UnitQuaternion::face_towards(&direction, &Vector3::y()))
+        .build();
+
+    // Create unit cylinder with caps that faces toward Z axis.
+    let shape = Arc::new(Mutex::new(SurfaceData::make_cylinder(
+        6,     // Count of sides
+        1.0,   // Radius
+        1.0,   // Height
+        false, // No caps are needed.
+        // Rotate vertical cylinder around X axis to make it face towards Z axis
+        &UnitQuaternion::from_axis_angle(&Vector3::x_axis(), 90.0f32.to_radians()).to_homogeneous(),
+    )));
+
+    // Create an instance of standard material for the shot trail.
+    let mut material = Material::standard();
+    material
+        .set_property(
+            &ImmutableString::new("diffuseColor"),
+            // Set yellow-ish color.
+            PropertyValue::Color(Color::from_rgba(255, 255, 0, 120)),
+        )
+        .unwrap();
+
+    MeshBuilder::new(
+        BaseBuilder::new()
+            .with_local_transform(transform)
+            // Shot trail should live ~0.25 seconds, after that it will be automatically
+            // destroyed.
+            .with_lifetime(0.25),
+    )
+    .with_surfaces(vec![SurfaceBuilder::new(shape)
+        .with_material(Arc::new(Mutex::new(material)))
+        .build()])
+    // Do not cast shadows.
+    .with_cast_shadows(false)
+    // Make sure to set Forward render path, otherwise the object won't be
+    // transparent.
+    .with_render_path(RenderPath::Forward)
+    .build(graph);
 }
 
 fn main() {
@@ -293,7 +465,7 @@ fn main() {
                     elapsed_time += TIMESTEP;
 
                     // Run our game's logic.
-                    game.update(&mut engine);
+                    game.update(&mut engine, TIMESTEP);
 
                     // Update engine each frame.
                     engine.update(TIMESTEP);

@@ -56,17 +56,16 @@
 [WARNING]: Unable to load options file data/models/barrel/barrel.FBX.options for data/models/barrel/barrel.FBX resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Trying to load "data/models/barrel/barrel.FBX"
 [WARNING]: Unable to load options file data/models/barrel/barrel.jpg.options for data/models/barrel/barrel.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[WARNING]: Unable to load options file data/models/barrel/barrel_normal.jpg.options for data/models/barrel/barrel_normal.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: FBX "data/models/barrel/barrel.FBX" loaded in 5 ms
 	- Parsing - 2 ms
 	- DOM Prepare - 0 ms
 	- Conversion - 2 ms
-[WARNING]: Unable to load options file data/models/barrel/barrel_normal.jpg.options for data/models/barrel/barrel_normal.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Model "data/models/barrel/barrel.FBX" is loaded!
 [WARNING]: Unable to load options file data/textures/floor.jpg.options for data/textures/floor.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Starting resolve...
-[WARNING]: Unable to load options file data/textures/wall.jpg.options for data/textures/wall.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[WARNING]: Unable to load options file data/textures/concrete.jpg.options for data/textures/concrete.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Resolving graph...
+[WARNING]: Unable to load options file data/textures/wall.jpg.options for data/textures/wall.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Original handles resolved!
 [INFO]: Checking integrity...
 [INFO]: Integrity restored for 6 instances! 0 new nodes were added!
@@ -75,34 +74,35 @@
 [INFO]: Animations resolved successfully!
 [INFO]: Resolve succeeded!
 [INFO]: Model "data/models/scene.rgs" is loaded!
+[WARNING]: Unable to load options file data/textures/concrete.jpg.options for data/textures/concrete.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [WARNING]: Unable to load options file data/textures/skybox/front.jpg.options for data/textures/skybox/front.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: Texture "data/textures/wall.jpg" is loaded in 733.376679ms!
+[INFO]: Texture "data/textures/wall.jpg" is loaded in 784.0541ms!
 [WARNING]: Unable to load options file data/textures/skybox/back.jpg.options for data/textures/skybox/back.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: Texture "data/models/barrel/barrel_normal.jpg" is loaded in 1.054856013s!
+[INFO]: Texture "data/models/barrel/barrel.jpg" is loaded in 1.116494687s!
 [WARNING]: Unable to load options file data/textures/skybox/left.jpg.options for data/textures/skybox/left.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: Texture "data/models/barrel/barrel.jpg" is loaded in 1.203695102s!
+[INFO]: Texture "data/models/barrel/barrel_normal.jpg" is loaded in 1.198788539s!
 [WARNING]: Unable to load options file data/textures/skybox/right.jpg.options for data/textures/skybox/right.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: Texture "data/textures/concrete.jpg" is loaded in 3.268488088s!
+[INFO]: Texture "data/textures/concrete.jpg" is loaded in 3.094688507s!
 [WARNING]: Unable to load options file data/textures/skybox/up.jpg.options for data/textures/skybox/up.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: Texture "data/textures/skybox/front.jpg" is loaded in 4.243936864s!
+[INFO]: Texture "data/textures/skybox/front.jpg" is loaded in 4.242864261s!
 [WARNING]: Unable to load options file data/textures/skybox/down.jpg.options for data/textures/skybox/down.jpg resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: Texture "data/textures/floor.jpg" is loaded in 4.338962033s!
-[INFO]: Texture "data/textures/skybox/back.jpg" is loaded in 4.370234158s!
-[INFO]: Texture "data/textures/skybox/left.jpg" is loaded in 4.257373792s!
-[INFO]: Texture "data/textures/skybox/right.jpg" is loaded in 4.401365184s!
-[INFO]: Texture "data/textures/skybox/up.jpg" is loaded in 4.069598102s!
-[INFO]: Texture "data/textures/skybox/down.jpg" is loaded in 3.959820874s!
+[INFO]: Texture "data/textures/floor.jpg" is loaded in 4.468422048s!
+[INFO]: Texture "data/textures/skybox/back.jpg" is loaded in 4.303787906s!
+[INFO]: Texture "data/textures/skybox/left.jpg" is loaded in 4.184004861s!
+[INFO]: Texture "data/textures/skybox/right.jpg" is loaded in 4.266135953s!
+[INFO]: Texture "data/textures/skybox/up.jpg" is loaded in 4.215213312s!
+[INFO]: Texture "data/textures/skybox/down.jpg" is loaded in 3.923016578s!
 [WARNING]: Unable to load options file data/models/m4/m4.FBX.options for data/models/m4/m4.FBX resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Trying to load "data/models/m4/m4.FBX"
-[WARNING]: Unable to load options file data/models/m4/M4_Magazine_normal.png.options for data/models/m4/M4_Magazine_normal.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [WARNING]: Unable to load options file data/models/m4/M4_Magazine.png.options for data/models/m4/M4_Magazine.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[WARNING]: Unable to load options file data/models/m4/M4_Magazine_normal.png.options for data/models/m4/M4_Magazine_normal.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [WARNING]: Unable to load options file data/models/m4/M4_Sight.png.options for data/models/m4/M4_Sight.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [WARNING]: Unable to load options file data/models/m4/M4_Sight_normal.png.options for data/models/m4/M4_Sight_normal.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [WARNING]: Unable to load options file data/models/m4/M4_Body.png.options for data/models/m4/M4_Body.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
-[INFO]: FBX "data/models/m4/m4.FBX" loaded in 810 ms
-	- Parsing - 335 ms
+[INFO]: FBX "data/models/m4/m4.FBX" loaded in 807 ms
+	- Parsing - 333 ms
 	- DOM Prepare - 9 ms
-	- Conversion - 465 ms
+	- Conversion - 464 ms
 [INFO]: Model "data/models/m4/m4.FBX" is loaded!
 [WARNING]: Unable to load options file data/models/m4/M4_Body_normal.png.options for data/models/m4/M4_Body_normal.png resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
 [INFO]: Shader DecalShader_VertexShader compiled successfully!
@@ -244,1011 +244,107 @@
 [INFO]: Shader BloomShader_VertexShader compiled successfully!
 [INFO]: Shader BloomShader_FragmentShader compiled successfully!
 [INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Shader BlurShader_VertexShader compiled successfully!
-[INFO]: Shader BlurShader_FragmentShader compiled successfully!
-[INFO]: Shader BlurShader linked successfully!
-[INFO]: Shader SsaoShader_VertexShader compiled successfully!
-[INFO]: Shader SsaoShader_FragmentShader compiled successfully!
-[INFO]: Shader SsaoShader linked successfully!
-[INFO]: Shader DecalShader_VertexShader compiled successfully!
-[INFO]: Shader DecalShader_FragmentShader compiled successfully!
-[INFO]: Shader DecalShader linked successfully!
-[INFO]: Shader AdaptationShader_VertexShader compiled successfully!
-[INFO]: Shader AdaptationShader_FragmentShader compiled successfully!
-[INFO]: Shader AdaptationShader linked successfully!
-[INFO]: Shader LuminanceShader_VertexShader compiled successfully!
-[INFO]: Shader LuminanceShader_FragmentShader compiled successfully!
-[INFO]: Shader LuminanceShader linked successfully!
-[INFO]: Shader DownscaleShader_VertexShader compiled successfully!
-[INFO]: Shader DownscaleShader_FragmentShader compiled successfully!
-[INFO]: Shader DownscaleShader linked successfully!
-[INFO]: Shader HdrToLdrShader_VertexShader compiled successfully!
-[INFO]: Shader HdrToLdrShader_FragmentShader compiled successfully!
-[INFO]: Shader HdrToLdrShader linked successfully!
-[INFO]: Shader BloomShader_VertexShader compiled successfully!
-[INFO]: Shader BloomShader_FragmentShader compiled successfully!
-[INFO]: Shader BloomShader linked successfully!
-[INFO]: Shader GaussianBlurShader_VertexShader compiled successfully!
-[INFO]: Shader GaussianBlurShader_FragmentShader compiled successfully!
-[INFO]: Shader GaussianBlurShader linked successfully!
-[INFO]: Texture "data/models/m4/M4_Magazine.png" is loaded in 4.648698155s!
-[INFO]: Texture "data/models/m4/M4_Sight_normal.png" is loaded in 5.429407222s!
-[INFO]: Texture "data/models/m4/M4_Magazine_normal.png" is loaded in 5.636898248s!
-[INFO]: Texture "data/models/m4/M4_Body_normal.png" is loaded in 5.299140363s!
-[INFO]: Texture "data/models/m4/M4_Sight.png" is loaded in 5.723512644s!
-[INFO]: Texture "data/models/m4/M4_Body.png" is loaded in 5.515594432s!
+[INFO]: Shad[WARNING]: Unable to load options file data/models/Pistol-Lazer.fbx.options for data/models/Pistol-Lazer.fbx resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[INFO]: Trying to load "data/models/Pistol-Lazer.fbx"
+[WARNING]: Unable to find a texture "Battery_Charge_needle_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_needle_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_needle_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_needle_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Ceramic_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Ceramic_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Ceramic_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Ceramic_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Metal_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Metal_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Metal_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Charge_Metal_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Base_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Base_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Base_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Base_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Magnet_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Magnet_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Magnet_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Crosshair_Scope_Magnet_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Disc_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Disc_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Disc_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Disc_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Turbo_Energy_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Turbo_Energy_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Turbo_Energy_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Turbo_Energy_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Front_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Front_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Front_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Front_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Disck_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Disck_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Disck_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Disck_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Both_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Both_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Both_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Stores_Energy_Both_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Gas_Tube_two_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Gas_Tube_two_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Gas_Tube_two_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Gas_Tube_two_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Lever_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Lever_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Lever_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Lever_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_cap_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_cap_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_cap_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_cap_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Muzzle_Spring_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Base_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Base_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Base_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Base_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Spring_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Spring_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Spring_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Antenna_Spring_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Cable_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Cable_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Cable_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Cable_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Generator_Baterry_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Support_Diffuse.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Support_Normal.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Support_Roughness.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "Battery_Support_Metallic.png" for 3D model "data/models/Pistol-Lazer.fbx" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[INFO]: FBX "data/models/Pistol-Lazer.fbx" loaded in 90 ms
+	- Parsing - 72 ms
+	- DOM Prepare - 3 ms
+	- Conversion - 13 ms
+[INFO]: Model "data/models/Pistol-Lazer.fbx" is loaded!
+[WARNING]: Unable to load options file data/models/Pistol-Lazer.fbx.options for data/models/Pistol-Lazer.fbx resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[WARNING]: Unable to load options file data/models/zombi.FBX.options for data/models/zombi.FBX resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[INFO]: Trying to load "data/models/zombi.FBX"
+[INFO]: FBX "data/models/zombi.FBX" loaded in 68 ms
+	- Parsing - 59 ms
+	- DOM Prepare - 1 ms
+	- Conversion - 7 ms
+[INFO]: Model "data/models/zombi.FBX" is loaded!
+[WARNING]: Unable to load options file data/models/zombi.FBX.options for data/models/zombi.FBX resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[WARNING]: Unable to load options file data/models/m1_garand/m1garand.FBX.options for data/models/m1_garand/m1garand.FBX resource, fallback to defaults! Reason: Io(Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[INFO]: Trying to load "data/models/m1_garand/m1garand.FBX"
+[WARNING]: Unable to find a texture "walnut1.jpg" for 3D model "data/models/m1_garand/m1garand.FBX" using ModelImportOptions { material_search_options: RecursiveUp } option!
+[WARNING]: Unable to find a texture "M1Rifle.jpg" for 3D model "data/models/m1_garand/m1garand.FBX" using ModelImportOptions { material_search_options: RecursiveUp } option!
